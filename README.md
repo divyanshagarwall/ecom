@@ -1,1 +1,1 @@
-# gadegt_wonders
+# gadgets_wonders
