@@ -127,11 +127,11 @@ function manage_cart(pid, type, is_checkout) {
                 // if (result == 'not_avaliable') {
                 //     alert('Qty not avaliable');
             } else {
-                jQuery(".htc__qua").html(result);
                 if (is_checkout == "yes") {
                     window.location.href = "checkout.php";
                 }
             }
+            jQuery(".htc__qua").html(result);
         },
     });
 }
