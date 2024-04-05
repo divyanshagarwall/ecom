@@ -10,7 +10,6 @@
                                 <div class="slide">
                                     <div class="slider__inner">
                                         <h1>Welcome to GLA's GADGET WONDERS</h1>
-                                        <!-- <h2>collection 2023</h2> -->
                                         <div class="cr__btn">
                                             <a href="cart.php">Cart</a>
                                         </div>
@@ -78,8 +77,6 @@
                                     <div class="fr__hover__info">
                                     <ul class="product__action">
                                         <li><a href="javascript:void(0)" onclick="wishlist_manage('<?php echo $list['id']?>','add')"><i class="icon-heart icons"></i></a></li>
-
-                                        <!-- <li><a href="javascript:void(0)" onclick="manage_cart('<?php echo $list['id']?>','add')"><i class="icon-handbag icons"></i></a></li> -->
                                     </ul>
                                 </div>
                                     <div class="fr__product__inner">
@@ -91,26 +88,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Single Category -->
 							<?php } ?>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Category Area -->
-        <!-- Start Product Area -->
-        <!-- <section class="ftr__product__area ptb--100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="section__title--2 text-center">
-                            <h2 class="title__line">Best Seller</h2>
-                            <p>Sorry we don't have any best selling product. actually we are not going to lie to you none of our product is getting sold, we are going to get bankrupt :-(</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- End Product Area -->
 <?php require('footer.php')?>        

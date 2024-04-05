@@ -25,8 +25,6 @@ if(!isset($_SESSION['USER_LOGIN'])){
                 </div>
             </div>
         </div>
-        <!-- End Bradcaump area -->
-        <!-- cart-main-area start -->
         <div class="wishlist-area ptb--100 bg__white">
             <div class="container">
                 <div class="row">

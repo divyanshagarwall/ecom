@@ -3334,13 +3334,14 @@ footer.site-footer .footer-inner a {
     left: inherit!important;
     right: 20px!important
 }
-.mt-150{
-	margin-top:150px;
+
+.mt-150 {
+    margin-top: 150px;
 }
 
-.field_error{
-	color:red;
-	margin-top:15px;
+.field_error {
+    color: red;
+    margin-top: 15px;
 }
 
 .card .box-link {
@@ -3349,14 +3350,15 @@ footer.site-footer .footer-inner a {
     padding: 5px 0
 }
 
-.card .box-link a{
-    color:#000;
-	text-decoration:underline;
-}
-.badge a{
-	color:#fff;
+.card .box-link a {
+    color: #000;
+    text-decoration: underline;
 }
 
-#address_details{
-	margin:10px;
+.badge a {
+    color: #fff;
+}
+
+#address_details {
+    margin: 10px;
 }
