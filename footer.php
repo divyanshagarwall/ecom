@@ -44,29 +44,14 @@
                         <h2 class="title__line--2"> account</h2>
                         <div class="ft__inner">
                             <ul class="ft__list">
-                                <li><a href="#">My Account</a></li>
+                                <li><a href="profile.php">My Account</a></li>
+                                <li><a href="login.php">Login</a></li>
                                 <li><a href="cart.php">My Cart</a></li>
-                                <!-- <li><a href="login.php  ">Login</a></li> -->
-                                <!-- <li><a href="wishlist.html">Wishlist</a></li> -->
-                                <!-- <li><a href="checkout.php">Checkout</a></li> -->
+                                <li><a href="wishlist.php">Wishlist</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <!--<div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
-                            <div class="footer">
-                                <h2 class="title__line--2">Our service</h2>
-                                <div class="ft__inner">
-                                    <ul class="ft__list">
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="cart.php">My Cart</a></li>
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>-->
                 <div class="col-md-3 col-sm-6 col-xs-12 xmt-40 smt-40">
                     <div class="footer">
                         <h2 class="title__line--2">NEWSLETTER </h2>
@@ -89,8 +74,10 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="copyright__inner">
-                        <p>Copyright© GLA UNIVERSITY Pvt. Ltd.</a> All right reserved.</p>
-                        <a><img src="images/others/shape/paypol.png" alt="payment images"></a>
+                        <div class="col-sm-6">
+                            Copyright &copy;
+                            <?php echo date('Y') ?> GLA UNIVERSITY PVT. LTD.
+                        </div>
                     </div>
                 </div>
             </div>

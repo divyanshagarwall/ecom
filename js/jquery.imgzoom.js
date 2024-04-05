@@ -9,7 +9,7 @@
     function ImgZoom(options) {
         this.opts = options;
         this.$el = options.$el;
-        this.$sImg = options.$el.find('img');
+        this.$sImg = options.$el.find("img");
         this.$zoomDiv = null;
         this.$bigImg = null;
         this.boxWidth = options.boxWidth;
@@ -26,31 +26,34 @@
     ImgZoom.prototype = {
         constructor: ImgZoom,
         _init: function() {
-            this.$el.css('position', 'relative');
+            this.$el.css("position", "relative");
             this.bindEvent();
         },
         _createZoomDiv: function() {
             var boxWidth = this.boxWidth;
             var boxHeight = this.boxHeight;
 
-            this.$zoomDiv || (this.$zoomDiv = $('<div/>'));
+            this.$zoomDiv || (this.$zoomDiv = $("<div/>"));
             var offset = this.$el.offset();
-            var zoomDivLeft = offset.left / 1 + this.$el.outerWidth(true) / 1 + this.opts.marginLeft / 1;
+            var zoomDivLeft =
+                offset.left / 1 +
+                this.$el.outerWidth(true) / 1 +
+                this.opts.marginLeft / 1;
             var zoomDivTop = offset.top / 1;
-            this.$bigImg.css('position', 'absolute');
+            this.$bigImg.css("position", "absolute");
             this.$zoomDiv.append(this.$bigImg);
             this.$zoomDiv.css({
-                position: 'absolute',
+                position: "absolute",
                 left: zoomDivLeft,
                 top: zoomDivTop,
                 zIndex: 999,
                 width: boxWidth,
                 height: boxHeight,
-                overflow: 'hidden',
-                border: '1px solid #222',
-                background: '#FFF'
+                overflow: "hidden",
+                border: "1px solid #222",
+                background: "#FFF",
             });
-            $('body').append(this.$zoomDiv);
+            $("body").append(this.$zoomDiv);
         },
         _createMask: function() {
             var boxWidth = this.boxWidth;
@@ -58,17 +61,17 @@
             this.elWidth = this.$el.outerWidth(true);
             this.elHeight = this.$el.outerHeight(true);
 
-            this.maskWidth = Math.ceil(boxWidth / this.imgWidth * this.elWidth);
-            this.maskHeight = Math.ceil(boxHeight / this.imgHeight * this.elHeight);
+            this.maskWidth = Math.ceil((boxWidth / this.imgWidth) * this.elWidth);
+            this.maskHeight = Math.ceil((boxHeight / this.imgHeight) * this.elHeight);
             this.maskWidth > this.elWidth && (this.maskWidth = this.elWidth);
             this.maskHeight > this.elHeight && (this.maskHeight = this.elHeight);
-            this.$mask || (this.$mask = $('<div/>'));
+            this.$mask || (this.$mask = $("<div/>"));
             this.$mask.css({
-                position: 'absolute',
-                background: 'rgba(255,255,255,.4)',
+                position: "absolute",
+                background: "rgba(255,255,255,.4)",
                 width: this.maskWidth,
                 height: this.maskHeight,
-                cursor: 'move'
+                cursor: "move",
             });
             this.$el.append(this.$mask);
         },
@@ -79,7 +82,7 @@
         bindEvent: function() {
             var _this = this;
             this.$el.on({
-                'mouseenter': function() {
+                mouseenter: function() {
                     _this.flag = true;
                     var imgOrigin = _this.$sImg.attr(_this.opts.origin);
                     var img = new Image();
@@ -91,19 +94,18 @@
                             _this.createHTML();
                             _this.flag = false;
                         }
-                    }
+                    };
                     img.src = imgOrigin;
                 },
-                'mouseleave': function() {
+                mouseleave: function() {
                     if (_this.flag) {
                         _this.flag = false;
                     } else {
                         _this.$zoomDiv && _this.$zoomDiv.remove();
                         _this.$mask && _this.$mask.remove();
                     }
-
                 },
-                'mousemove': function(e) {
+                mousemove: function(e) {
                     if (!_this.$bigImg) {
                         return false;
                     }
@@ -120,20 +122,20 @@
                     left = left > maxX ? maxX : left;
                     top = top > maxY ? maxY : top;
 
-                    var bigLeft = -left * _this.imgWidth / _this.elWidth;
-                    var bigTop = -top * _this.imgHeight / _this.elHeight;
+                    var bigLeft = (-left * _this.imgWidth) / _this.elWidth;
+                    var bigTop = (-top * _this.imgHeight) / _this.elHeight;
 
                     _this.$mask.css({
                         left: left,
-                        top: top
+                        top: top,
                     });
                     _this.$bigImg.css({
                         left: bigLeft,
-                        top: bigTop
+                        top: bigTop,
                     });
-                }
+                },
             });
-        }
+        },
     };
 
     $.fn.imgZoom = function(options) {
@@ -141,7 +143,7 @@
             boxWidth: 360,
             boxHeight: 360,
             marginLeft: 5,
-            origin: 'data-origin'
+            origin: "data-origin",
         };
         $.each(this, function(i, t) {
             var config = $.extend(defaults, options);
