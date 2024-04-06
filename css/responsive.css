@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
   Template Name: Asbab eCommerce HTML5 Template.
-  Description: Asbab is a unique website template designed in HTML with a simple & beautiful look.
+ 
 
 -----------------------------------------------------------------------------------*/
 
@@ -38,6 +38,7 @@
     .inc__banner--2 .ht__intrac__details h2 {
         font-size: 80px;
     }
+    
 }
 
 @media (min-width: 1170px) and (max-width: 1299px) {
@@ -202,7 +203,7 @@
         margin-top: 10px;
     }
     .slider--5 .slider__inner h1 {
-        font-size: 50px;
+        font-size: 20px;
     }
     .slider--5 .slider__fixed--height {
         height: 400px;
@@ -225,7 +226,7 @@
         left: 100%;
     }
     .slider__inner h1 {
-        font-size: 77px;
+        font-size: 50px;
     }
     .pointer__tooltip.pointer--6 {
         left: 57%;
@@ -347,7 +348,7 @@
         padding-right: 52px;
     }
     .slider--two .slider__inner h1 {
-        font-size: 58px;
+        font-size: 38px;
         line-height: 72px;
     }
     .slider--two .slider__activation__wrap--2 .owl-nav div.owl-next {
@@ -387,7 +388,7 @@
         margin-bottom: 12px;
     }
     .slider--3 .slider__inner h1 {
-        font-size: 80px;
+        font-size: 50px;
     }
     .slider--3 .ht__slider__btn {
         margin-top: 18px;
@@ -535,7 +536,7 @@
         margin-top: -60px;
     }
     .slider__inner h1 {
-        font-size: 58px;
+        font-size: 38px;
     }
     .pointer__tooltip.pointer--6,
     .pointer__tooltip.pointer--7 {
@@ -807,7 +808,7 @@
         padding: 100px 0;
     }
     .slider__inner h1 {
-        font-size: 40px;
+        font-size: 20px;
         margin-bottom: 8px;
         margin-top: 21px;
     }
@@ -858,7 +859,7 @@
         padding-right: 0;
     }
     .slider--two .slider__inner h1 {
-        font-size: 45px;
+        font-size: 35px;
         line-height: 60px;
         padding-top: 0;
     }

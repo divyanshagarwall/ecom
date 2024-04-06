@@ -202,7 +202,7 @@ nav.off__canvars--menu ul li ul li a:hover {
 }
 
 .header__search a::before {
-    background: #898989;
+   
     content: "";
     height: 15px;
     position: absolute;
@@ -222,7 +222,7 @@ nav.off__canvars--menu ul li ul li a:hover {
 }
 
 .header__account a::before {
-    background: #898989 none repeat scroll 0 0;
+   background: white none repeat scroll 0 0;
     content: "";
     height: 15px;
     position: absolute;
