@@ -90,10 +90,13 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN'] == 'yes') {
 								<span class="field_error" id="email_error"></span>
 							</div>
 							<div class="single-contact-form">
-								<div class="contact-box name">
-									<input type="number" pattern="[0-9]{10} name=" mobile" id="mobile"
-										placeholder="Your Mobile" minlength="10" maxlength="10" style="width:100%"
-										required>
+								<div class="single-contact-form">
+									<div class="contact-box name">
+										<input type="number" pattern="[0-9]{10} name=" mobile" id="mobile"
+											placeholder="Your Mobile" minlength="10" maxlength="10" style="width:100%"
+											required>
+									</div>
+									<span class="field_error" id="mobile_error"></span>
 								</div>
 								<span class="field_error" id="mobile_error"></span>
 							</div>
