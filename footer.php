@@ -10,16 +10,17 @@
                             </p>
                             <div class="ft__social__link">
                                 <ul class="social__link">
-                                    <li><a href="https://www.twitter.com/"><i class="icon-social-twitter icons"></i></a>
+                                    <li><a href="https://www.twitter.com/" target="_blank"><i
+                                                class="icon-social-twitter icons"></i></a>
                                     </li>
 
-                                    <li><a href="https://www.instagram.com/"><i
+                                    <li><a href="https://www.instagram.com/" target="_blank"><i
                                                 class="icon-social-instagram icons"></i></a></li>
 
-                                    <li><a href="https://www.facebook.com/"><i
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i
                                                 class="icon-social-facebook icons"></i></a></li>
 
-                                    <li><a href="https://www.linkedin.com/"><i
+                                    <li><a href="https://www.linkedin.com/" target="_blank"><i
                                                 class="icon-social-linkedin icons"></i></a></li>
                                 </ul>
                             </div>
@@ -32,9 +33,9 @@
                         <h2 class="title__line--2">information</h2>
                         <div class="ft__inner">
                             <ul class="ft__list">
-                                <li><a href="./html/aboutus.html">About us</a></li>
-                                <li><a href="./html/Privacy&Policy.html">Privacy & Policy</a></li>
-                                <li><a href="./html/Terms&Condition.html">Terms & Condition</a></li>
+                                <li><a href="./html/aboutus.html" target="_blank">About us</a></li>
+                                <li><a href="./html/privacy&policy.html" target="_blank">Privacy & Policy</a></li>
+                                <li><a href="./html/terms&condition.html" target="_blank">Terms & Condition</a></li>
                             </ul>
                         </div>
                     </div>

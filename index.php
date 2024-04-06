@@ -34,7 +34,7 @@
                                 <div class="slide">
                                     <div class="slider__inner">
                                         <h2>Collection 2024</h2>
-                                        <h1 style="font-size: 30px;">Under Rs4,999</h1>
+                                        <h1 style="font-size: 30px;">Under Rs9,999</h1>
                                         <h6 style="font-size: 20px;">Bestselling earbuds,headphones & more</h6>
                                     </div>
                                 </div>
