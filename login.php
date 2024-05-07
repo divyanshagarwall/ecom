@@ -77,14 +77,14 @@ if (isset($_SESSION['USER_LOGIN']) && $_SESSION['USER_LOGIN'] == 'yes') {
 						<form id="register-form" method="post">
 							<div class="single-contact-form">
 								<div class="contact-box name">
-									<input type="text" name="name" id="name" placeholder="Your Name" style="width:100%">
+									<input type="text" name="name" id="name" pattern="[A-Za-z\s]{1,50}" placeholder="Your Name" style="width:100%">
 								</div>
 								<span class="field_error" id="name_error"></span>
 							</div>
 							<div class="single-contact-form">
 								<div class="contact-box name">
 									<input type="email" name="email" id="email"
-										pattern="[a-zA-Z0-9, _%+-]+@[a-zA-Z0-9, -]+\.[a-zA-Z]{2,}"
+									pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 										placeholder="Your Email" style="width:100%">
 								</div>
 								<span class="field_error" id="email_error"></span>
